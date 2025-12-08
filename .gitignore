@@ -36,3 +36,8 @@ test/
 # Cache directories (shouldn't be in repo)
 cache/
 tmp/
+
+# AI context files
+CLAUDE.md
+.claude/
+*.ai.md

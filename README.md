@@ -27,7 +27,7 @@ A beautiful, minimal Spotify status indicator for tmux with dynamic icons and in
 1. Add plugin to your `~/.tmux.conf`:
 
 ```tmux
-set -g @plugin 'yourusername/tmux-spotify-status'
+set -g @plugin 'juan52878911/tmux-spotify-status'
 ```
 
 2. Press `prefix + I` to install the plugin
@@ -37,7 +37,7 @@ set -g @plugin 'yourusername/tmux-spotify-status'
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/tmux-spotify-status.git ~/.tmux/plugins/tmux-spotify-status
+git clone https://github.com/juan52878911/tmux-spotify-status.git ~/.tmux/plugins/tmux-spotify-status
 ```
 
 2. Add to your `~/.tmux.conf`:
@@ -147,4 +147,4 @@ Share your setup! Tag `#tmux-spotify-status` on Twitter/X.
 
 ---
 
-Made with ♥ by [Your Name]
+Made with ♥ by [JuanPBedoya](https://github.com/juan52878911)
