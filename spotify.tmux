@@ -12,6 +12,7 @@ default_text_fg="#cdd6f4"
 default_icon_fg="#11111b"
 default_left_separator=""
 default_right_separator=""
+default_icon_separator=""
 
 # Get tmux options with defaults
 get_tmux_option() {
@@ -32,6 +33,7 @@ text_fg=$(get_tmux_option "@spotify_text_fg" "$default_text_fg")
 icon_fg=$(get_tmux_option "@spotify_icon_fg" "$default_icon_fg")
 left_separator=$(get_tmux_option "@spotify_left_separator" "$default_left_separator")
 right_separator=$(get_tmux_option "@spotify_right_separator" "$default_right_separator")
+icon_separator=$(get_tmux_option "@spotify_icon_separator" "$default_icon_separator")
 
 # Make scripts executable
 chmod +x "$CURRENT_DIR/scripts/spotify.sh"
@@ -40,7 +42,7 @@ chmod +x "$CURRENT_DIR/scripts/spotify_status.sh"
 
 # Build Spotify module with Catppuccin-like styling
 spotify_module="#[fg=${icon_color},bg=default]${left_separator}"
-spotify_module+="#[fg=${icon_fg},bg=${icon_color}]#($CURRENT_DIR/scripts/spotify_icon.sh) "
+spotify_module+="#[fg=${icon_fg},bg=${icon_color}]#($CURRENT_DIR/scripts/spotify_icon.sh)${icon_separator}"
 spotify_module+="#[fg=${text_bg},bg=${icon_color}]"
 spotify_module+="#[fg=${text_fg},bg=${text_bg}] "
 spotify_module+="#($CURRENT_DIR/scripts/spotify.sh)"

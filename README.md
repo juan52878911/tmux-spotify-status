@@ -78,6 +78,7 @@ set -g status-right " #[fg=#cdd6f4]%H:%M  "
 set -g @plugin 'juan52878911/tmux-spotify-status'
 set -g @spotify_left_separator ""
 set -g @spotify_right_separator ""
+set -g @spotify_icon_separator " "
 
 # Update interval for smooth scrolling
 set -g status-interval 1
@@ -102,6 +103,7 @@ set -g @spotify_text_fg "#cdd6f4"
 # Separators
 set -g @spotify_left_separator ""
 set -g @spotify_right_separator ""
+set -g @spotify_icon_separator " "
 
 # Update interval (recommended for smooth scrolling)
 set -g status-interval 1
